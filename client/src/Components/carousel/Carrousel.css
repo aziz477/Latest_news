@@ -1,0 +1,113 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+
+/*slider*/
+#carouselExampleIndicators{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+#carouselExampleIndicators .carousel-inner{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #000;
+}
+#carouselExampleIndicators .carousel-inner:before{
+	position: absolute;
+	content: '';
+	background: rgba(0, 0, 0, 0.45);
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item{
+	position: relative;
+	height: 100%;
+	width:100%;
+	background: url('https://images.unsplash.com/photo-1583752028088-91e3e9880b46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80') no-repeat center fixed;
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover;
+
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
+	background: url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') no-repeat center fixed;
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover;
+	
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
+	background: url('https://images.unsplash.com/photo-1520452112805-c6692c840af0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80') no-repeat center fixed;
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover;
+;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item h1{
+	height: auto;
+	color: #fff;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 4.5em;
+	font-weight: 750;
+	font-family: 'Poppins',sans-serif !important;
+}
+
+
+
+#carouselExampleIndicators .carousel-inner .carousel-item p{
+	height: auto;
+	color: #ccc;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+@media screen and (max-width:475px){
+	h1{
+		font-size:2.5em !important;
+	}
+}
+@media screen and (max-width:570px) and (orientation:landscape){
+	h1{
+		font-size:3.5em !important;
+
+	}
+}
+@media screen and (max-width:768px) and (orientation:landscape){
+	h1{
+		font-size:3.5em !important;
+
+	}
+}
